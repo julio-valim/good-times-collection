@@ -7,10 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'var(--font-roboto)',
+        alt: 'var(--font-bai-jamjuree)',
+        got: 'var(--font-gothic)',
+      },
+
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        stripes:
+          'linear-gradient(to bottom, rgba(255,255,255, 1), rgba(255,255,255, 1) 12.5%, transparent 12.5%, transparent)',
+      },
+
+      backgroundSize: {
+        stripes: '100% 8px',
+      },
+
+      blur: {
+        full: '194px',
       },
     },
   },

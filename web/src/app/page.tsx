@@ -1,8 +1,26 @@
 export default function Home() {
   return (
-    <div className="h-screen bg-zinc-700 p-6 text-zinc-200">
-      <h1 className="text-4xl font-bold">GoodTimes</h1>
-      <h2 className="text-2xl italic">Collection</h2>
-    </div>
+    <main className="grid min-h-screen grid-cols-2">
+      {/* left side */}
+      <div className="relative flex flex-col items-start justify-between overflow-hidden border-r border-white/10 px-28 py-16">
+        {/* blur */}
+        <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-orange-400 blur-full" />
+        {/* stripe */}
+        <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
+      </div>
+
+      {/* right side */}
+      <div className="flex flex-col p-16">
+        <div className="flex flex-1 items-center justify-center">
+          <p className="text-center leading-relaxed">
+            Pin your first good time,{' '}
+            <a href="" className="italic underline hover:text-indigo-500">
+              here
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </main>
   )
 }
